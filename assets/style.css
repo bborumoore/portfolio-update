@@ -1,0 +1,169 @@
+/* First, create a black background on which to put my header and navbar */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Set My name to be black text over a background box, popping it from the banner */
+h1 {
+    background-color: cadetblue;
+    padding: 0% 1% 0% 2%;
+}
+
+/* Format nav links to be responsive and rest on the right side */
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 3%;
+    width: 40%;
+    font-size: larger;
+    color: cadetblue;
+    text-decoration: underline;
+}
+
+/* Format upper banner to remain a relatively constant size compared to the background of header */
+#upper-banner {
+    width: 100%;
+    position: relative;
+    top: 0px;
+}
+
+#banner-quote {
+    position: absolute;
+    bottom: 5%;
+    right:  2%;
+    width: 45%;
+    text-align: right;
+    color: white;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+.banner-card {
+    position: relative;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 100%
+  }
+
+  #self-portrait {
+    position: absolute;
+    z-index: 2;
+    max-height: 80%;
+    width: auto;
+    align-self: center;
+    left: 5%;
+    border-radius: 50%;
+  }
+  
+/* format for putting Text over an image */
+.image-card {
+    position: relative;
+    text-align: center;
+    color: white;
+    display: flex;
+  }
+
+  .image-card img {
+      width: 45%;
+      height: auto;
+      position
+  }
+
+  .image-card-text {
+    flex: 1 0 100%;
+    position: absolute;
+    bottom: 5%;
+    left: 0%;
+    text-align: left;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    background-color: cadetblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  /* Format sections of main to have large headers to the left of section content with the content filling
+  the rest of the space */
+  main {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      
+  }
+  
+  main section {
+    display: flex;
+    width: 100%;
+  }
+
+  main h3 {
+      justify-self: end;
+      text-align: right;
+      margin: 2% 3% 0px 0px;
+      padding-top: 2%;
+      font-size: 24px;
+      color: darkblue;
+      width: 19%;
+      padding-right: 3%;
+      border-right: 10px solid lightblue;
+      border-width: 10px;
+  }
+
+  .section-content {
+      width: 75%;
+      justify-content: space-evenly;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 2%;
+      margin: 2% 0px 0px 0px;
+  }
+
+  /* Formatting for icons */
+  .icon {
+      max-height: 30px;
+      width: auto;
+      height: 30px;
+  }
+  /* Formatting specific to the Contact me section to get it to display similar to the header */
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: lightblue;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    bottom: 0px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+#work {
+    flex: 1 0 100%;
+    /* when the screen resizes, make it so our columns don't jump in size */
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+}
+
+
+
+/* make each code card a flexbox column to align and justify content within it */
+
+
+
+
